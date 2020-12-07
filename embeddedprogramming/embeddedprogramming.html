@@ -1,0 +1,73 @@
+<!DOCTYBE html>
+<head>
+<title> Empedded programming </title>
+</head>
+<h3> In this section a simple use of the programming an arduino uno is depicted</h3> <br>
+<h4> The idea is to flash the built in LED in the arduino with a bush button in a way that the LED flashes 4 times with a regression in delay<br>
+inversly proportional to the times the push button is clicked</h4><br>
+<center> <h3> What do we need </h3><br>
+<h4> 1- Arduino Uno<br>
+<center><img src="images\11.jpg" width= "800px" height="600px" > <br></center>
+     2- Arduino data cable<br>
+	 <center><img src="images\14.jpg" width= "800px" height="600px" > <br></center>
+	 3- Push button <br>
+	 <center><img src="images\12.jpg" width= "800px" height="600px" > <br></center>
+	 4- Bread board <br>
+	 <center><img src="images\15.jpg" width= "800px" height="600px" > <br></center>
+	 5- Resistor for protecting the components<br>
+	 <center><img src="images\13.jpg" width= "800px" height="600px" > <br></center>
+	 6- Connecting cables (male-male, female-male)<br>
+	 <center><img src="images\16.jpg" width= "800px" height="600px" > <br></center>
+	 7- computer equipped with the Arduino software<br>
+	 <center><img src="images\arduinologo.png" width= "800px" height="600px" > <br></center>
+	 </h4>
+	 
+<h3> Getting to work : Connections</h3><br>
+<h4> First We connect the components on the bread board in this following way, I am using here the software Tinkercad for better visualisation<br>
+and making sure that the program is running accordingly<br>
+<center><img src="images\tinkercadlogo.jpg" width= "800px" height="600px" > <br></center>
+The connection is done color coded as follows: <br>
+- RED: Positive connected to power pin 5V of the arduino<br>
+- BLACK: Ground or negative side of the circuit connected to the GND pin on the arduino<br>
+- ORANGE: Data connected to pin 6 on the digital pins of the arduino<br><br>
+The connection should look as depicted<br>
+<center><img src="images\4.png" width= "800px" height="600px" > <br></center></h4>
+<center><img src="images\41.jpg" width= "800px" height="600px" > <br></center></h4>
+
+<h3> Arduino setup</h3>
+<h4>Then we run the arduino program an connect the arduino data USB cable <br>
+<center><img src="images\1.png" width= "800px" height="600px" > <br></center>
+Setting up of the arduino is done using the Tool >> boards >> Arduino UNO<br>
+<center><img src="images\2.png" width= "800px" height="600px" > <br></center>
+<center><img src="images\3.png" width= "800px" height="600px" > <br></center></h4>
+
+<h3> LED code</h3>
+<h4> The idea is based on clicking the push button to flash the built in LED on the arduino but with a decaying delay inversly proportional to the<br>
+number of clicks on the push button<br>
+The code is depicted in the following pictures<br>
+<center><img src="images\6.png" width= "800px" height="600px" > <br></center>
+<center><img src="images\7.png" width= "800px" height="600px" > <br></center></h4>
+
+<h3> Testing </h3><br>
+<h4> after finializing the code I first tested it on the Tinkercad software to make sure that it's working flowlessly<br> 
+<center><video width="320" height="240" controls> 
+        <source src="images\tin.mp4" type="video/mp4"></video></center><br>
+<h4> Then we validated and upload the code on the Arduino and by testing it it should behave as following<br>
+<center><video width="320" height="240" controls> 
+        <source src="images\ard.mp4" type="video/mp4"></video></center><br>
+		</h4>
+
+<h3> Resources </h3> <br>
+<h4>To download the code<br>
+<a href="code\ledFlashingCom.zip" download>LED_FLASHING_WITH_COMMENTS</a><br>
+<a href="code\ledFlashing.zip" download>LED_FLASHING</a>
+
+
+
+
+
+
+
+
+
+	 
