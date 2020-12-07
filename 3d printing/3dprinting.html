@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+
+<head>
+<title> Additive manufacturing </title>
+</head>
+<body>
+ <center><h3> In this section an example of modelling for 3D printing is depicted. A cam gear mechanism is modelled using fusion 360, and<br>
+printed using Ultimaker 5S 3d printing machine. </h3><br>
+<h3> First we start by the modelling of the cam gear mechanism which is derived by human hand</h3> <br> 
+<h3> The design consists of 5 parts which need to be modelled individually </h3> <br>
+
+<h3> Cam Gear <br>
+We start by sketching the profile of the cam gear using the ellipse tool, then sketching the material optimisation profiles. <br>
+<center><img src= "images\4.png" width="600px" Height="600px"> <br></center>
+Then using the extrusion tool the final profile of the gear can take shape with a material thickness of 2 mm. <br>
+<center><img src= "images\41.png" width="600px" Height="600px"> <br></center>
+<center><img src= "images\42.png" width="600px" Height="600px"> <br></center>
+
+Reciprocator Guide <br>
+We start by sketching the profile of the reciprocator guide using the Rectangular tool, then sketching the spindle holder .<br>
+<center><img src= "images\8.png" width="600px" Height="600px"> <br></center>
+Then using the extrusion tool the final profile of the guide  can take shape with a material thickness of 5 mm. <br>
+<center><img src= "images\81.png" width="600px" Height="600px"> <br></center>
+notice that the spindle holder is supposed to allow the spindle to rotate freely so a tolerance of 1 mm is applied to the slot.<br>
+
+Lever (Handle) <br>
+We start by sketching the profile of the reciprocator guide using the rectangular and circle tools, then sketching the material optimisation profiles .<br>
+<center><img src= "images\1.png" width="600px" Height="600px"> <br></center>
+Then Extruding the profiles using the extrusion tool with a material thickness of 3 mm <br>
+<center><img src= "images\11.png" width="600px" Height="600px"> <br></center>
+
+Reciprocator <br>
+Using the sketch tool we can derive the profile with the rectangular and circle tools, then sketching the material optimisation profiles. <br>
+<center><img src= "images\3.png" width="600px" Height="600px"> <br></center>
+<center><img src= "images\2.png" width="600px" Height="600px"> <br></center>
+
+Extruding the profile with 3 mm thickness. <br>
+<center><img src= "images\31.png" width="600px" Height="600px"> <br></center>
+
+Spindel <br>
+By using the sketching tool we can create the profile of the spindle using the rectangular tool, then adding the material optimosation profile.<br>
+<center><img src= "images\7.png" width="600px" Height="600px"> <br></center>
+<center><img src= "images\6.png" width="600px" Height="600px"> <br></center>
+The spindle is going to be having to deal with the load coming from human hand input, so adding a truss support profile is essential to avoid fracture.<br>
+Using the extrude tool by a thickness of 2.9 mm, we can conclude the final profile of the spindle. <br>
+<center><img src= "images\71.png" width="600px" Height="600px"> <br></center>
+notice that the spindle is supposed to be form fitted in the cam gear slot so the thickness of the spindle profile should be less than the cam slot.<br>
+
+The final assembly should be having this profile. <br> 
+<center><img src= "images\9.png" width="600px" Height="600px"> <br></center>
+<center><img src= "images\10.png" width="600px" Height="600px"> <br></center>
+
+The motion analysis of the mechanism should behave like follows. <br> </h3>
+<center><img src= "images\assy.gif" width="600px" Height="600px"> <br></center>
+
+<h3> 3D printing <br>
+In order to transform the fusion 360 files into readable additive manufacturing machines language we need to use a slicing program to transform<br>
+the fusion 360 files into G-Code, which slices the solid models into multible slices in xyz coordinates<br>
+we use the program Ultimaker Cura 4.8.0 for preparing the print. <br>
+<center><img src= "images\curalogo.jpg" width="600px" Height="600px"> <br></center>
+
+After saving our individual parts as STL files we can import them into Ultimaker Cura 4.8.0 and place them correctly on the printing plate so that<br>
+no overhang is allowed as the printing is done bottom up direction and the material need to be supported.<br>
+<center><img src= "images\cura1.png" width="600px" Height="600px"> <br></center>
+
+
+By using these printing configurations we can prepare the parts for printing<br>
+<center><img src= "images\cura2.png" width="600px" Height="400px"> <br></center>
+<center><img src= "images\cura3.png" width="600px" Height="400px"> <br></center>
+<center><img src= "images\cura4.png" width="600px" Height="400px"> <br></center>
+
+
+Notice that for such a mechanical part a relatively high layer hight is recommended to optimise toughness and overcoming plastic elasticity.<br> 
+
+After final checking for the printig specs we can press slice, the program starts to transform the solid parts into G-Code slices and opting out<br>
+a time estimation of the print and a G-Code file. We save the file to our USB stick and the file is good to go to the Ultimaker S5.<br>
+<center><img src= "images\curat.png" width="600px" Height="400px"> <br></center>
+
+
+The ultimaker printing machine is qualified with a USB stick input slot which we can use it directly and choosing the file form the window and <br>
+pressing Print.<br>
+<center><img src= "images\p1.jpg" width="600px" Height="600px"> <br></center>
+
+
+The final print will be looking like follows <br></h3>
+<center><img src= "images\p2.jpg" width="600px" Height="600px"> <br></center>
+<center><img src= "images\p3.jpg" width="600px" Height="600px"> <br></center>
+
+<h3>Conclusion <br></center>
+- The print wasn't easily detachable from the printing plate because of not using a build plate adhesion.<br>
+- The manual assymbly of the print didn't work as designed because of using a high layer hight (0.2mm) which ignored the (0.1) mm tolerances.<br>
+- A redo of the fittings tolerances should be applied and optimised with the machine tolerance untill an effective assymbly is achived (Trial and Error) <br></h3>
+
+<h3> To download the stl files </h3><br>
+<a href="stlfiles\camgear.stl" download> camgear </a><br>
+<a href="stlfiles\3d printing\guide.stl" download> guide </a><br>
+<a href="stlfiles\lever.stl" download> lever </a><br>
+<a href="stlfiles\spindle.stl" download> spindle </a><br>
+<a href="stlfiles\reciprocator.stl" download> reciprocator </a><br>
+<h3> To download the f3d files </h3><br>
+<a href="fusion\assy.f3z" download> cam mechanism </a><br>
+</center>
+
+
+
+
+</body> 
+
+</html>
