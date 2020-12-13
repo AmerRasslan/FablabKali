@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+
+<head>
+<title>Input Devices</title>
+</head>
+<body>
+<h3> In this section a simple use of the programming an arduino uno is depicted</h3> <br>
+<h4> This project is using an ultrasound sensor to triggre a light resistance into reading analog voltage on the arduino<br>
+and as a plus turning on the arduino builtin LED as long as the light sensor is triggered</h4><br>
+<center> <h3> What do we need </h3><br>
+<h4> 1- Arduino Uno<br>
+<center><img src="images\arduino.jpg" width= "800px" height="600px" > <br></center>
+     2- Arduino data cable<br>
+	 <center><img src="images\arcable.jpg" width= "800px" height="600px" > <br></center>
+	 3- Ultrasound sensor <br>
+	 <center><img src="images\ultrasound.jpeg" width= "800px" height="600px" > <br></center>
+	 4- Bread board <br>
+	 <center><img src="images\breadboard.jpg" width= "800px" height="600px" > <br></center>
+	 5- Resistor for protecting the components<br>
+	 <center><img src="images\resistor.jpeg" width= "800px" height="600px" > <br></center>
+	 6- Connecting cables (male-male, female-male)<br>
+	 <center><img src="images\cables.jpeg" width= "800px" height="600px" > <br></center>
+	 7- Light sensor / light resistor<br>
+	 	 <center><img src="images\lightresistor.jpeg" width= "800px" height="600px" > <br></center>
+	 7- computer equipped with the Arduino software<br>
+	 <center><img src="images\arduinologo.png" width= "800px" height="600px" > <br></center>
+	 </h4>
+	 
+	 
+<h3> Getting to work : Connections</h3><br>
+<h4> First We connect the components on the bread board in this following way, I am using here the software Tinkercad for better visualisation<br>
+
+<center><img src="images\tinkercadlogo.jpg" width= "800px" height="600px" > <br></center>
+
+The connection should look as depicted<br>
+<center><img src="images\circuitTink.png" width= "800px" height="600px" > <br></center></h4>
+<center><img src="images\circuitAr.jpeg" width= "800px" height="600px" > <br></center></h4>
+
+<h3> Arduino code</h3>
+<h4> The logic of the code is designed so when a hand gesture is interrupting the ultrasound sensor with a distance less than 5 cm <br>
+the arduino LED and the light sensor are triggered and the light sesnor data is read through the monitor<br>
+The code is depicted in the following pictures<br>
+<center><img src="images\code1.png" width= "800px" height="600px" > <br></center>
+<center><img src="images\code2.png" width= "800px" height="600px" > <br></center></h4>
+
+<h3> Testing </h3><br>
+<h4> after finializing the code it is time for a test<br> 
+<center><video width="320" height="240" controls> 
+        <source src="images\soundToLdr.mp4" type="video/mp4"></video></center><br>
+
+<h3> Resources </h3> <br>
+<h4>To download the code<br>
+<a href="code\soundToLdrCom.zip" download>Sound to LDR with comments</a><br>
+<a href="code\soundToLdr.zip" download>Sound to LDR</a>
+
+</body> 
+
+
+
+ 
+</html>
